@@ -17,8 +17,8 @@ export default function Counters() {
   useEffect(() => {
 
     // If we change state here, we get endless loop
-    /* const rand = () =>  Math.floor(Math.random() * 256);
-    setBgColor(`rgb(${rand()},${rand()},${rand()})`); */
+    // const rand = () =>  Math.floor(Math.random() * 256);
+    // setBgColor(`rgb(${rand()},${rand()},${rand()})`);
 
     console.log(`There was mount(first render) or re-render`)
 
@@ -29,15 +29,29 @@ export default function Counters() {
    */
   useEffect(() => {
 
+        let intervalId = setInterval(() => {
+          const rand = () =>  Math.floor(Math.random() * 256);
+          setBgColor(`rgb(${rand()},${rand()},${rand()})`);
+        },3500)
+
         console.log(`MOUNT`);
         // This useEffect is useful for fetching initial data from somewhere,
         // as fetching data is an asynchronous operation, and this specific useEffect
         // does this once - only on mount
 
         // Perform some actions before UNMOUNT:
-        return ( () => console.log(`Before UNMOUNT`) )
+        return ( () => {
+          console.log(`Before UNMOUNT`)
+          clearInterval(intervalId);
+        } )
 
   }, [])
+
+  useEffect(() => {
+
+    console.log(`counter1 = ${counter1} or counter2 = ${counter2}`)
+
+  },[counter1,counter2])
 
   return (
     <div>

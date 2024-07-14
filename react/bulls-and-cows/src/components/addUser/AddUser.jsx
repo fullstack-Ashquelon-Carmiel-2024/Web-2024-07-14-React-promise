@@ -4,7 +4,9 @@ import {useNavigate} from 'react-router-dom';
 
 export default function AddUser({children, add}) {
 
-  const [formData,setFormData] = useState({});
+  const [formData,setFormData] = useState({fullName:'',email:'',
+                                            nick:'',phone:'',
+                                            gender:'',role:''});
   const navigate = useNavigate();
 
   const handleChange = e => setFormData({...formData,
@@ -17,7 +19,9 @@ export default function AddUser({children, add}) {
     /* if (e.target.checkValidity()) { */
 
       add(formData);
-      setFormData({});
+      setFormData({fullName:'',email:'',
+                    nick:'',phone:'',
+                    gender:'',role:''});
       navigate('/');
 
     /* } */

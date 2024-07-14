@@ -5,7 +5,8 @@
 - games minimum: 2 games refactored from we've already done + 1 new,
                  or 3 games refactored
 - technologies: router, using external APIs(at 14.07.2024), 
-  (redux? - if not, it will be in the next project), Material UI,
+  (redux? - if not, it will be in the next project), 
+  Material UI icons,
   Sass
 - Pages: SignIn, LogIn, UserDetails, UsersAdminView, 
   GamesAdminView(may be inside UsersAdminView), games

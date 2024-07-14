@@ -8,6 +8,8 @@ import Header from './components/header/Header';
 import Navbar from './components/navbar/Navbar';
 import UserList from './components/userList/UserList';
 
+import UseEffect from './learn/UseEffect';
+
 import UserContext from './contexts/userContext';
 
 function App() {
@@ -73,6 +75,8 @@ function App() {
                                           </AddUser>} />
                                           
           <Route path="/bulls-and-cows" element={<BullsAndCows />} />
+          
+          <Route path="/use-effect" element={<UseEffect />} />
 
         </Routes>
       </div>

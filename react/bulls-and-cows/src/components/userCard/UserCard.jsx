@@ -8,12 +8,12 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { useContext} from 'react';
 import UserContext from '../../contexts/userContext';
 
-export default function UserCard({user}) {
+export default function UserCard({user, pic}) {
 
     const { fullName, email, role, id } = user;
     const { removeUser } = useContext(UserContext);
 
-  let imgSrc = !user.gender ? justUserImg : user.gender === 'f' 
+  let imgSrc = !user.gender && pic ? pic : !user.gender ? justUserImg : user.gender === 'f' 
                             ? femaleImg : maleImg;
 
   return (

@@ -24,6 +24,9 @@ export default function Navbar() {
           <li className="nav-item">
             <Link to="/bulls-and-cows" className="nav-link">Bulls and Cows Game</Link>
           </li>
+          <li className="nav-item">
+            <Link to="/use-effect" className="nav-link">useEffect</Link>
+          </li>
         </ul>
         <form className="d-flex" role="search">
           <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
