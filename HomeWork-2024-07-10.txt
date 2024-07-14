@@ -46,6 +46,9 @@ CHALLENGEs are OPTIONAL
    11-shopping-carts - the requirements are in 
         projects/11-shopping-carts/about-shopping-carts.txt - 17.07.2024
 
+   12-react-game-portal - the requirements are in
+        projects/12-react-game-portal/about.txt - 26.07.2024
+
    Optional Projects:
       - Canvas "Breakout Game"
       - "Endless Dangers" - see the description below
