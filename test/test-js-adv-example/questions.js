@@ -1350,7 +1350,7 @@ Initialize n with a positive integer value. */
 /* INITIAL CODE */
 
 function countdown89(n) {
-
+  
 }
 
 console.log(`countdown: `);
@@ -1367,9 +1367,205 @@ that returns a string combining the brand and model. */
 /* INITIAL CODE */
 
 class Car90 {
-
+  
 }
 
+/* QUESTION NUMBER: 091 */ /* LANGUAGE: JS */ /* DIFFICULTY: easy */
+/* QUESTION TYPE: Code */
+/* QUESTION: You've got a class Person91. Create an object of this class, 
+named 'person91'. 
+Set the value of 'name' to 'John' and 'age' to 25. */
 
+/* INITIAL CODE */
 
+class Person91 {
+  constructor(name,age) {
+    this.name = name;
+    this.age = age;
+  }
+}
 
+/* QUESTION NUMBER: 092 */ /* LANGUAGE: JS */ /* DIFFICULTY: easy */
+/* QUESTION TYPE: MCQ */
+/* QUESTION: What is the syntax for accessing a property 
+of an object in JavaScript?
+*/
+
+/* ANSWERS:
+a) object.property
+b) object["property"]
+c) both a && b
+d) a is correct, and b not, but it would be correct, if there was a variable instead of a string
+*/
+
+/* QUESTION NUMBER: 093 */ /* LANGUAGE: JS */ /* DIFFICULTY: easy */
+/* QUESTION TYPE: MCQ */
+/* QUESTION: What special character is used 
+to match the beginning of a string in regex?
+*/
+
+/* ANSWERS:
+a) ^
+b) $
+c) *
+d) ?
+*/
+
+/* QUESTION NUMBER: 094 */ /* LANGUAGE: JS */ /* DIFFICULTY: easy */
+/* QUESTION TYPE: Code */
+/* QUESTION: Use RegExp class to create a regex pattern to check 
+if a string contains white spaces in the beginning or in the end */
+
+/* INITIAL CODE */
+
+let reg94 = new RegExp()
+
+/* QUESTION NUMBER: 095 */ /* LANGUAGE: JS */ /* DIFFICULTY: easy */
+/* QUESTION TYPE: Code */
+/* QUESTION: Use RegExp class to create a regex pattern that matches 
+any string starting with 'a' or 'A' and ending with 't' or 'T'. */
+
+/* INITIAL CODE */
+
+let reg95 = new RegExp()
+
+/* QUESTION NUMBER: 096 */ /* LANGUAGE: JS */ /* DIFFICULTY: medium */
+/* QUESTION TYPE: Code */
+/* QUESTION: Start interval timer that prints a smiley every 2.5 seconds
+inside showSmileys96 div. 
+Add to the listener of btnStop96 an arrow function that enables us 
+to cancel printing the smileys. */
+
+/* INITIAL CODE */
+
+const btnStop96 = document.querySelector('#q096 .btn');
+const showSmileys96 = document.querySelector('#q096 .smileys > div');
+
+/* QUESTION NUMBER: 097 */ /* LANGUAGE: JS */ /* DIFFICULTY: easy */
+/* QUESTION TYPE: MCQ */
+/* QUESTION: What is setInterval() method used for?
+*/
+
+/* ANSWERS:
+a) Executing a function only once after a specified delay.
+b) Setting a delay (in milliseconds) and executing a function repeatedly.
+c) Clearing the interval previously set by setInterval().
+d) Executing a series of functions concurrently.
+*/
+
+/* QUESTION NUMBER: 098 */ /* LANGUAGE: JS */ /* DIFFICULTY: medium */
+/* QUESTION TYPE: Code */
+/* QUESTION: Given an array 
+arr98 = [1, 2, 3], 
+create a new array newArr98 
+that adds an additional element 4 at the end, using the spread operator. */
+
+/* INITIAL CODE */
+
+const arr98 = [1, 2, 3];
+const newArr98 = 'your code';
+console.log('newArr98: \n',newArr98);
+
+/* QUESTION NUMBER: 099 */ /* LANGUAGE: JS */ /* DIFFICULTY: medium */
+/* QUESTION TYPE: Code */
+/* QUESTION: Given two arrays 
+arr991 = [1, 2] 
+and 
+arr992 = [3, 4], 
+create a new array newArr99 that combines the elements of both arrays 
+using the spread operator. */
+
+/* INITIAL CODE */
+
+const arr991 = [1, 2];
+const arr992 = [3, 4];
+const newArr99 = 'your code';
+console.log('newArr99: \n', newArr99);
+
+/* QUESTION NUMBER: 100 */ /* LANGUAGE: JS */ /* DIFFICULTY: medium */
+/* QUESTION TYPE: Code */
+/* QUESTION: Given the object 
+grapes100 = {color:'white',taste:'very sweet',weightKg: 34}, 
+create a new object newGrapes100 that contains the same properties 
+as grapes100 using the spread operator. */
+
+/* INITIAL CODE */
+
+const grapes100 = {color:'white',taste:'very sweet',weightKg: 34};
+const newGrapes100 = 'your code';
+console.log('newGrapes100: \n', newGrapes100);
+
+/* QUESTION NUMBER: 101 */ /* LANGUAGE: JS */ /* DIFFICULTY: hard */
+/* QUESTION TYPE: Code */
+/* QUESTION: CHALLENGE: Given a nested array, destructure 
+the elements 'two' and 'six' into two separate variables. */
+
+/* INITIAL CODE */
+
+const arr101 = [1, 2, [3, 4, ['five', 'six']]];
+
+// your code
+
+console.log(six)
+console.log(two)
+
+/* QUESTION NUMBER: 102 */ /* LANGUAGE: JS */ /* DIFFICULTY: medium */
+/* QUESTION TYPE: Code */
+/* QUESTION: Destructure the object person102 
+into variables name102 and age102. */
+
+/* INITIAL CODE */
+
+const person102 = {
+  name: 'John Doe',
+  age: 30
+};
+
+// your code
+
+/* QUESTION NUMBER: 103 */ /* LANGUAGE: JS */ /* DIFFICULTY: medium */
+/* QUESTION TYPE: Code */
+/* QUESTION: Given an array [1, 2, 3, 4], destructure it and 
+store 1 in a variable var1031 and the rest in an array named arr1032. */
+
+/* INITIAL CODE */
+
+const arr103 = [1, 2, 3, 4];
+
+//your code
+
+/* QUESTION NUMBER: 104 */ /* LANGUAGE: JS */ /* DIFFICULTY: medium */
+/* QUESTION TYPE: Code */
+/* QUESTION: Destructure the array 
+['apple', 'banana', 'orange', 'grape'] 
+into variables fruit1041, fruit1042, and remainingFruits104. */
+
+/* INITIAL CODE */
+
+// ['apple', 'banana', 'orange', 'grape']
+
+/* QUESTION NUMBER: 105 */ /* LANGUAGE: JS */ /* DIFFICULTY: medium */
+/* QUESTION TYPE: Code */
+/* QUESTION: Destructure the array 
+['John', 'Doe', 30] 
+into variables firstName105, lastName105, and age105. */
+
+/* INITIAL CODE */
+
+// ['John', 'Doe', 30]
+
+/* QUESTION NUMBER: 106 */ /* LANGUAGE: JS */ /* DIFFICULTY: medium */
+/* QUESTION TYPE: Code */
+/* QUESTION: Destructure the array 
+ar106 = ['apple', 'banana', 'orange'] 
+into individual variables greenFruit, yellowFruit, orangeFruit. 
+After that destructure the object 
+obj106 = {greenFruit:'avocado',yellowFruit:'lemon',orangeFruit: 'persimmon'}
+ while changing the names of the variables to greenFruit2, yellowFruit2, 
+ orangeFruit2 */
+
+/* INITIAL CODE */
+
+const ar106 = ['apple', 'banana', 'orange'] 
+ 
+const obj106 = {greenFruit:'avocado',yellowFruit:'lemon',orangeFruit: 'persimmon'}

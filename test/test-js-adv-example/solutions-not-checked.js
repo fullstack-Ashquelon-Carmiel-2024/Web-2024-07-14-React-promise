@@ -1211,5 +1211,128 @@ class Car90 {
 
 /* CORRECT CODE */
 
+class Person91 {
+  constructor(name,age) {
+    this.name = name;
+    this.age = age;
+  }
+}
+
+const person91 = new Person91('John',25);
+
+// 92
+
+/* RIGHT ANSWER: both a && b */
+
+// 93
+
+/* RIGHT ANSWER: ^ */
+
+// 94
+
+/* CORRECT CODE */
+
+let reg94 = new RegExp(/^\s|\s$/)
+
+// 95
+
+/* CORRECT CODE */
+
+let reg95 = RegExp(/^a|t$/,"i")
+
+// 96
+
+/* CORRECT CODE */
+
+const btnStop96 = document.querySelector('#q096 .btn');
+const showSmileys96 = document.querySelector('#q096 .smileys > div');
+let timerId96 = setInterval(() => {
+  showSmileys96.innerText += '😃';
+},2500)
+
+btnStop96.addEventListener('click',() => {clearInterval(timerId96)});
+
+// 97
+
+/* RIGHT ANSWER: Setting a delay (in milliseconds) and executing a function repeatedly. */
+
+// 98
+
+/* CORRECT CODE */
+
+const arr98 = [1, 2, 3];
+const newArr98 = [...arr98, 4];
+console.log('newArr98: \n',newArr98);
+
+// 99
+
+/* CORRECT CODE */
+
+const arr991 = [1, 2];
+const arr992 = [3, 4];
+const newArr99 = [...arr991, ...arr992];
+console.log('newArr99: \n', newArr99);
+
+// 100
+
+/* CORRECT CODE */
+
+const grapes100 = {color:'white',taste:'very sweet',weightKg: 34};
+const newGrapes100 = {...grapes100};
+console.log('newGrapes100: \n', newGrapes100);
+
+// 101
+
+/* CORRECT CODE */
+
+const arr101 = [1, 2, [3, 4, ['five', 'six']]];
+const [,two,[,,[,six]]] = arr101;
+
+console.log(six)
+console.log(two)
+
+// 102
+
+/* CORRECT CODE */
+
+const person102 = {
+  name: 'John Doe',
+  age: 30
+};
+
+const {name102, age102} = person102;
+
+// 103
+
+/* CORRECT CODE */
+
+const arr103 = [1, 2, 3, 4];
+
+const [var1031,...arr1032] = arr103;
+
+// 104
+
+/* CORRECT CODE */
+
+const [fruit1041,fruit1042,...remainingFruits104] = ['apple', 'banana', 'orange', 'grape'];
+
+// 105
+
+/* CORRECT CODE */
+
+const [firstName105, lastName105, age105] = ['John', 'Doe', 30];
+
+// 106
+
+/* CORRECT CODE */
+
+const ar106 = ['apple', 'banana', 'orange'] 
+const obj106 = {greenFruit:'avocado',
+               yellowFruit:'lemon',
+               orangeFruit: 'persimmon'}
+const [greenFruit, yellowFruit, orangeFruit] = ar106; 
+const {greenFruit : greenFruit2, yellowFruit : yellowFruit2, 
+       orangeFruit : orangeFruit2} = obj106; 
+
 
 
