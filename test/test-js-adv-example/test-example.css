@@ -13,6 +13,43 @@ h1, h2, h3 {
   font-variation-settings: "wdth" 100;
 }
 
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.out > div > div {
+  box-shadow: 2px 2px 2px 0 gray, inset 5px 5px white, inset -5px -5px 2px 1px rgb(235, 207, 145), -1px -1px 2px 1px gray;
+  min-height: 7rem;
+}
+
+#q084  .seconds > div {
+  min-width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+#q084  .chamshir > div {
+  min-width: 15rem;
+  padding: 0 1rem;
+}
+
+.heb {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  direction: rtl;
+}
+
+.heb-bold {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .btn {
     font-size: 2rem;
     padding: 0.7rem;

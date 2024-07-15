@@ -1060,8 +1060,156 @@ const { name79, profession79, age79 } = person79;
 let a80 = 4, b80 = 9, c80 = 7;
 
 let maxNum = a80 >= b80 && a80 >= c80 ? a80 
-           : b80 >= a80 && b80 >= c80 ? b80 : c80; 
+: b80 >= a80 && b80 >= c80 ? b80 : c80; 
 
 // the option with less comparisons, but the result may be less readable:
 // let maxNum80 = a80 > b80 ? (a80 > c80 ? a80 : c80) : (b80 > c80 ? b80 : c80);
+
+// 81
+
+/* CORRECT CODE */
+
+const persons81 = [
+  {name:'Dani',age:'11',hasDrivingLicense:false},
+  {name:'Dvora',age:'20',hasDrivingLicense:false},
+  {name:'Romi',age:'16',hasDrivingLicense:false},
+  {name:'Bracha',age:'101',hasDrivingLicense:true},
+]
+
+persons81.forEach((p,ix) => {
+  persons81[ix].recommendation = p.age < 16 
+  ? 'You cannot drive, baby' : p.hasDrivingLicense
+  ? 'Drive as you wish!' : 'Go learn driving!';
+})
+
+// 82
+
+/* CORRECT CODE */
+
+const colors82 = ['red','green','red','yellow','yellow','red','white','white']
+
+colors82.forEach((color,ix) => {
+  colors82[ix] = color === 'red' ? 'purple' : color === 'white'
+      ? 'lightblue' : color === 'green' ? 'turqouise' : 'green';
+})
+
+// 83
+
+/* CORRECT CODE */
+
+function countdown83(n) {
+  
+  let cnt = n;
+  console.log(`cnt = ${cnt}`)
+  
+  function t () {
+    if (cnt > 1)
+    setTimeout(() => {
+  cnt--;
+  console.log(`cnt = ${cnt}`)
+  t();
+},1000)
+}
+
+t();
+
+}
+
+countdown83(15);
+
+// 84
+
+/* CORRECT CODE */
+
+const showSeconds = document.querySelector('#q084  .seconds > div');
+const showChamshir = document.querySelector('#q084  .chamshir > div');
+const rows84 = ['היא חיכתה שם יפהפיה','כל כולה אומרת פנויה',
+'קרובה, מרגשת','שהחלטתי לגשת','ולתפוס לי מיד חניה']
+
+let sec = 0, ix = 0;
+showSeconds.innerText = sec;
+
+let intervalId84 = setInterval(() => {
+  sec++;
+  showSeconds.innerText = sec;
+  showChamshir.innerText += rows84[ix] + '\n';
+  ix = ix >= rows84.length - 1 ? 0 : ix+1;
+},1000);
+
+setTimeout(() => {
+  clearInterval(intervalId84);
+},7000)
+
+// 85
+
+/* RIGHT ANSWER: Each answer is right */
+
+// 86
+
+const ar86 =  ['A cat','The Dog','%new name%','The % of them is big','Big Bang']
+console.log(ar86.map(str => /^[%?A-C]/.test(str)).join(','))   
+
+/* RIGHT ANSWER: true,false,true,false,true */
+
+// 87
+
+const ar87 = ['A Cat','The Dog','%Cat And Mouse%','The % Of Them Is Big','Big Bang']
+let reg87 = /[A\-D]/
+console.log(ar87.map(str => reg87.test(str)).join(','))   
+
+/* RIGHT ANSWER: true,true,true,false,false */
+
+// 88
+
+/* CORRECT CODE */
+
+function factorial88(n) {
+
+  if (n === 0) return 1;
+
+  return n * factorial88(n-1);
+
+}
+
+console.log(`factorial: `,factorial88(7));
+console.log(`factorial: `,factorial88(0));
+console.log(`factorial: `,factorial88(1));
+
+// 89
+
+/* CORRECT CODE */
+
+function countdown89(n) {
+
+  if (n <= 1) return console.log(n);
+
+  console.log(n);
+  countdown89(n-1);
+}
+
+console.log(`countdown: `);
+countdown89(7);
+console.log(`countdown: `);
+countdown89(1);
+
+// 90
+
+/* CORRECT CODE */
+
+class Car90 {
+  constructor(brand,model) {
+    this.brand = brand;
+    this.model = model;
+  }
+
+  getFullDescription() {
+    return `This is ${this.brand}, model: ${this.model}`
+  }
+}
+
+// 91
+
+/* CORRECT CODE */
+
+
 

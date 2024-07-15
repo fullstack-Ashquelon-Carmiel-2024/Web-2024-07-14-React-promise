@@ -1125,7 +1125,7 @@ d) [1,2,3,4,5]
 /* QUESTION: Given the array arr731 = [1, 2, 3], 
 create a new array arr732 that is an exact copy of arr1 
 using the spread operator. */
-  
+
 /* INITIAL CODE */
 
 const arr731 = [1, 2, 3];
@@ -1137,11 +1137,11 @@ console.log(arr732);
 /* QUESTION:  Create a function sum74 that takes an unknown number 
 of arguments and returns the sum of all the arguments. 
 Use the rest operator. */
-  
+
 /* INITIAL CODE */
 
 function sum74() {
-
+  
 }
 
 console.log(`sum74(5,46,7) = `,sum74(5,46,7));
@@ -1152,11 +1152,11 @@ console.log(`sum74(-3,11,29,0.1,3.5) = `,sum74(-3,11,29,0.1,3.5));
 /* QUESTION:  Create a function 'concatenateStrings75' that takes 
 any number of string arguments 
 and returns their concatenation using the rest operator. */
-  
+
 /* INITIAL CODE */
 
 function concat75() {
-
+  
 }
 
 console.log(`concat75('Bye-bye',',','alligator') = `,concat75('Bye-bye',',','alligator'));
@@ -1168,14 +1168,14 @@ console.log(`concat75('You ','and ','me',' - ','we ') = `,concat75('You ','and '
 of arguments and returns their product (if there is zero, 
   the function does not multiply it), using the rest operator. */
   
-/* INITIAL CODE */
-
-function multipl76() {
-
-}
-
-console.log(`multipl76(7,8,9,0) = `,multipl76(7,8,9,0));
-console.log(`multipl76(-1,0.5,20,23,7) = `,multipl76(-1,0.5,20,23,7));
+  /* INITIAL CODE */
+  
+  function multipl76() {
+    
+  }
+  
+  console.log(`multipl76(7,8,9,0) = `,multipl76(7,8,9,0));
+  console.log(`multipl76(-1,0.5,20,23,7) = `,multipl76(-1,0.5,20,23,7));
 
 /* QUESTION NUMBER: 077 */ /* LANGUAGE: JS */ /* DIFFICULTY: medium */
 /* QUESTION TYPE: Code */
@@ -1183,7 +1183,7 @@ console.log(`multipl76(-1,0.5,20,23,7) = `,multipl76(-1,0.5,20,23,7));
 const person77 = { firstName77: 'John', lastName77: 'Doe', age77: 30 }; 
 Use destructuring to extract the values of firstName77 and 
 lastName into separate variables firstName and lastName77.  */
-  
+
 /* INITIAL CODE */
 
 const person77 = { firstName77: 'John', lastName77: 'Doe', age77: 30 };
@@ -1193,7 +1193,7 @@ const person77 = { firstName77: 'John', lastName77: 'Doe', age77: 30 };
 /* QUESTION: Using array destructuring, swap the values of 
 the variables 'a' and 'b'. 
 let a = 5; let b = 8;  */
-  
+
 /* INITIAL CODE */
 
 let a = 5; 
@@ -1204,7 +1204,7 @@ let b = 8;
 /* QUESTION: Destructure the following object to obtain the values 
 of its properties: 
 const person79 = { name79: 'John', age79: 25, profession79: 'developer' } */
-  
+
 /* INITIAL CODE */
 
 const person79 = { name79: 'John', age79: 25, profession79: 'developer' }
@@ -1214,10 +1214,161 @@ const person79 = { name79: 'John', age79: 25, profession79: 'developer' }
 /* QUESTION: Given three variables, a80, b80, and c80, 
 assign the maximum of the three to the variable maxNum80. 
 Write the code using nested ternary operator. */
-  
+
 /* INITIAL CODE */
 
 let a80 = 4, b80 = 9, c80 = 7;
+
+/* QUESTION NUMBER: 081 */ /* LANGUAGE: JS */ /* DIFFICULTY: medium */
+/* QUESTION TYPE: Code */
+/* QUESTION: Go over array of objects, where each object 
+contains peson's name, age and if has a driving lisense. 
+Use ternary operator to add to each object recomendation: 
+'You cannot drive' baby' - if the person is less than 16, 
+'Go learn driving!" - if the person is 16 or more 
+and has no driving lisense, 
+"Drive as you wish!" - in the case when the person is 16 
+                       or more and has driving lisense. */
+  
+/* INITIAL CODE */
+
+const persons81 = [
+  {name:'Dani',age:'11',hasDrivingLicense:false},
+  {name:'Dvora',age:'20',hasDrivingLicense:false},
+  {name:'Romi',age:'16',hasDrivingLicense:false},
+  {name:'Bracha',age:'101',hasDrivingLicense:true},
+]
+
+/* QUESTION NUMBER: 082 */ /* LANGUAGE: JS */ /* DIFFICULTY: hard */
+/* QUESTION TYPE: Code */
+/* QUESTION: Array contains colors, you mix blue color with each 
+of them. 
+If it was red, it become purple, 
+if it was white, it become lightblue, 
+if it was green, it becomes turquoise, 
+if it was yellow, it becomes green. 
+Write the code using nested ternary operator 
+and change the colors in the array in accordance. */
+
+/* INITIAL CODE */
+
+const colors82 = ['red','green','red','yellow','yellow','red','white','white']
+
+/* QUESTION NUMBER: 083 */ /* LANGUAGE: JS */ /* DIFFICULTY: hard */
+/* QUESTION TYPE: Code */
+/* QUESTION: LIGHT CHALLENGE. Create a function countDown83 that takes a number n 
+as a parameter and counts down from n to 1 with a delay of 1 second 
+between each number. 
+Use setTimeout to achieve this. */
+
+/* INITIAL CODE */
+
+function countdown83(n) {
+  
+}
+
+countdown83(15);
+
+/* QUESTION NUMBER: 084 */ /* LANGUAGE: JS */ /* DIFFICULTY: medium */
+/* QUESTION TYPE: Code */
+/* QUESTION: Each second, starting from the second number 1 show chamshir
+row in showChamshir, and if there no more rows, start from the beginning.
+Also show seconds, from 0 to 7 in showSeconds div. Stop at the 7th second. 
+Use setTimeout to achieve this. */
+
+/* INITIAL CODE */
+
+const showSeconds = document.querySelector('#q084  .seconds > div');
+const showChamshir = document.querySelector('#q084  .chamshir > div');
+const rows84 = ['היא חיכתה שם יפהפיה','כל כולה אומרת פנויה',
+'קרובה, מרגשת','שהחלטתי לגשת','ולתפוס לי מיד חניה']
+
+/* QUESTION NUMBER: 085 */ /* LANGUAGE: JS */ /* DIFFICULTY: easy */
+/* QUESTION TYPE: MCQ */
+/* QUESTION: What is the purpose of using callbacks in async functions?
+  
+/* ANSWERS:
+a) Each answer is right
+b) To handle more asynchronous operations in JavaScript
+c) To perform the steps that come after the async operation has ended
+d) To handle the error of the async operation
+*/
+
+/* QUESTION NUMBER: 086 */ /* LANGUAGE: JS */ /* DIFFICULTY: easy */
+/* QUESTION TYPE: MCQ */
+/* QUESTION: What will return the next check for the values 
+of the next array?  
+/^[%?A-C]/.test(str)   
+const ar86 =  ['A cat','The Dog','%new name%','The % of them is big','Big Bang']
+*/
+
+/* ANSWERS:
+a) true,false,true,false,true
+b) true,false,true,true,false
+c) false,true,false,true,false
+d) false,false,true,false,true
+*/
+
+/* QUESTION NUMBER: 087 */ /* LANGUAGE: JS */ /* DIFFICULTY: easy */
+/* QUESTION TYPE: MCQ */
+/* QUESTION: What Will Return The Next Check For The Values 
+Of The Next Array? 
+let reg87 = /[A\-D]/   
+reg87.test(str) 
+const ar87 = ['A Cat','The Dog','%Cat And Mouse%','The % Of Them Is Big','Big Bang']  
+*/
+
+/* ANSWERS:
+a) false,true,true,false,false
+b) true,false,true,false,false
+c) true,true,true,false,true
+d) true,true,true,false,false
+*/
+
+/* QUESTION NUMBER: 088 */ /* LANGUAGE: JS */ /* DIFFICULTY: hard */
+/* QUESTION TYPE: Code */
+/* QUESTION: Create a recursive function called factorial88 that takes 
+an argument n and returns its factorial. Initialize n with 
+a non-negative integer value. */
+
+/* INITIAL CODE */
+
+function factorial88(n) {
+
+}
+
+console.log(`factorial: `,factorial88(7));
+console.log(`factorial: `,factorial88(0));
+console.log(`factorial: `,factorial88(1));
+
+/* QUESTION NUMBER: 089 */ /* LANGUAGE: JS */ /* DIFFICULTY: hard */
+/* QUESTION TYPE: Code */
+/* QUESTION: Create a recursive function called countdown89 that takes 
+an argument n and prints the numbers from n to 1. 
+Initialize n with a positive integer value. */
+
+/* INITIAL CODE */
+
+function countdown89(n) {
+
+}
+
+console.log(`countdown: `);
+countdown89(7);
+console.log(`countdown: `);
+countdown89(1);
+
+/* QUESTION NUMBER: 090 */ /* LANGUAGE: JS */ /* DIFFICULTY: easy */
+/* QUESTION TYPE: Code */
+/* QUESTION: Create a class 'Car90' with properties 'brand' and 'model'. 
+Add a method 'getFullDescription' 
+that returns a string combining the brand and model. */
+
+/* INITIAL CODE */
+
+class Car90 {
+
+}
 
 
 
